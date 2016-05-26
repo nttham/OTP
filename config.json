@@ -1,0 +1,22 @@
+{
+    "channel": "twilio",
+    "otp": {
+        "otpLength": 4,
+        "otpType": "numeric",
+        "otpExpiryTime": 15
+    },
+    "sendgrid": {
+        "accountSID": "r8skU2912a",
+        "authToken": "BPRV4rL9N7jM9272",
+        "toRecipient": "neethu.tthampi@cognizant.com",
+        "fromMail": "SanthoshReddy.Tirumuru@cognizant.com"
+    },
+    "twilio": {
+        "accountSID": "AC728b20a72ea48a175a0cf47d11a6aa56",
+        "authToken": "1c84da28903505f762c727fe1bd65700",
+        "toRecipient": "+919539168770",
+        "fromNo": "+17758354685"
+    }
+
+
+}

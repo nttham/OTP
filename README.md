@@ -16,5 +16,6 @@ Options can have the following properties:
  * **otpExpiryTime**: The Expiry time for the generated code (default 15)
  
 
-To use this module you have to instantiate the otp.js and can call generateOtp and validateOtp using the roouter
-also you have to provide proper config.json
+To use this module you have to instantiate the otp.js and can call generateOtp and validateOtp using the router,
+also you have to provide the proper config.json with the dynamic values of options which will be taken from the 
+developer app.

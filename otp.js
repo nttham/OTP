@@ -95,9 +95,12 @@ Otp.prototype.generateOtp = function (app) {
                     res.send(JSON.stringify(err), 400);
                 }
                 else {
+                     var resObj = {
+                        otpCode: otpCode,
+                        otpKey: encrypted
+                    };
 
-                    res.send("OTP send successfully", 200);
-
+                    res.send(JSON.stringify(resObj), 200);
                 }
             });
         }

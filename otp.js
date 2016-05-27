@@ -72,10 +72,7 @@ Otp.prototype.generateOtp = function (app) {
                     };
 
                     res.send(JSON.stringify(resObj), 200);
-                    //  res.send(200);
-                    //   res.send("OTP send successfully", 200);
-                    //res.end();
-
+                    
                 }
 
             });

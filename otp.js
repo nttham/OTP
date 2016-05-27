@@ -123,14 +123,17 @@ Otp.prototype.validateOtp = function (app) {
         var splitedSecretData = decrypted.split('-');
         var status = {};
         var currentTime = Date.now();
-        if (req.body.otpCode === splitedSecretData[0] && splitedSecretData[1] > currentTime) {
-            status.status = "OTP is validated successfully";
-        } else {
-            status.status = "OTP validation failed ";
-        }
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        res.send(JSON.stringify(status), 200);
+        if (req.body.otpCode === splitedSecretData[0] && splitedSecretData[1] > currentTime) {
+            status.status = "OTP is validated successfully";
+            res.send(JSON.stringify(status), 200);
+        } else {
+            status.status = "OTP validation failed ";
+            res.send(JSON.stringify(status), 400);
+        }
+       
+       
 
 
     });

@@ -10,7 +10,9 @@ var app = express();
 console.log("facebookObjStr ********* without parse "+process.env.facebookObjStr);
 
 console.log("facebookObjStr ********* withparse  "+JSON.parse(process.env.facebookObjStr));
-
+var obj = JSON.parse(process.env.facebookObjStr);
+console.log("facebookObjStr *********obj.prehook  "+obj.prehook);
+console.log("facebookObjStr *********obj.posthook  "+obj.posthook);
 
 var port = process.env.VCAP_APP_PORT || 3000;
 //started a server which is listening on port 

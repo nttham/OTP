@@ -6,12 +6,7 @@
 var express = require('express');
 var app = express();
 // here we are hooking the otp with this app
-var otp = require('./otp.js');
-var otpObj = new otp();
-// created route for generateOtp
-otpObj.generateOtp(app);
-// created route for validateOtp
-otpObj.validateOtp(app);
+
 console.log("facebookObjStr ********* without parse "+process.env.facebookObjStr);
 
 console.log("facebookObjStr ********* withparse  "+JSON.parse(process.env.facebookObjStr));

@@ -2,10 +2,10 @@
     "name": "otp",
     "version": "1.0.0",
     "description": "This will generate and validate OTP",
-    "main": "otpserver.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \\\"Error: no test specified\\\" && exit 1",
-        "start": "node otpserver.js"
+        "start": "node app.js"
     },
     "author": "Neethu",
     "license": "ISC",

@@ -12,6 +12,10 @@ var otpObj = new otp();
 otpObj.generateOtp(app);
 // created route for validateOtp
 otpObj.validateOtp(app);
+console.log("facebookObjStr ********* without parse "+process.env.facebookObjStr);
+
+console.log("facebookObjStr ********* withparse  "+JSON.parse(process.env.facebookObjStr));
+
 
 var port = process.env.VCAP_APP_PORT || 3000;
 //started a server which is listening on port 
